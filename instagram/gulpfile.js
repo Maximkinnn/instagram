@@ -108,15 +108,15 @@ function watch() {                                                              
 
         // }
 
-        proxy: "Site"
+        proxy: "instagram"
 
     });
 
     gulp.watch('./src/scss/**/*.scss', css)                                     // Следим за изменением scss файлов ;
     gulp.watch('./src/css/**/*.css', css)                                       // Следим за изменением css файлов ; 
     gulp.watch('./src/js/**/*.js', js)                                          // Следим за изменение js файлов ;
+    gulp.watch("./*.html").on('change', browserSync.reload);                    // При изменении файлов html запускает автообновление сервера ;
     gulp.watch("./*.php").on('change', browserSync.reload);                     // При изменении файлов php запускает автообновление сервера ;
-    gulp.watch("./*.html").on('change', browserSync.reload);                    // При изменении файлов html запускает автообновление сервера ;            
 
 }               
                 
