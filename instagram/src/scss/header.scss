@@ -161,11 +161,11 @@ header {
                         margin-top: 15px;
                         margin-bottom: 30px;
 
-                        img {
+                        // img {
 
                             // pointer-events: none;
     
-                        }
+                        // }
     
                     }
 
@@ -225,6 +225,14 @@ header {
                         letter-spacing: 0.5px;
 
                         color: #ffffff;
+
+                        &:hover {
+
+                            transition: .4s;
+
+                            background-color: #79c8fc;
+
+                        }
 
                     }
 
@@ -310,6 +318,16 @@ header {
 
                         margin-bottom: 12px;
 
+                        &:hover {
+
+                            transition: .2s;
+
+                            text-decoration: underline;
+
+                            color: #021686;
+
+                        }
+
                         img {
 
                             width: 18px;
@@ -336,6 +354,18 @@ header {
 
                         margin-top: 14px;
                         margin-bottom: 5px;
+
+                            &:hover {
+
+                                transition: .2s;
+
+                                text-decoration: underline;
+
+                                color: #414141;
+
+                            }
+
+                        
 
                     }
 
@@ -373,6 +403,14 @@ header {
                     font-weight: 600;
                     letter-spacing: 0.2px;
 
+                    &:hover {
+
+                        transition: .2s;
+
+                        color: #1a79c2;
+
+                    }
+
                 }
 
             }
@@ -409,6 +447,12 @@ header {
 
                         margin-right: 8px;
 
+                        &:last-child {
+
+                            margin: 0;
+
+                        }
+
                     }
 
                 }
@@ -418,128 +462,3 @@ header {
         }
 
     }
-
-footer {
-
-    height: 17.5vh;
-    width: 100%;
-
-    // background: green;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-        a {
-
-        color: #8a8a8a;
-
-        text-decoration: none;
-
-        font-size: 12px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-
-        margin-right: 10px;
-
-            &:last-child {
-
-                margin-right: 0px;
-
-            }
-
-            &:hover {
-
-                color: #979797;
-                transition: .2s ease;
-
-            }
-
-    }
-
-    .footer-wrapper {
-
-        max-height: 100%;
-        max-width: 1447px;
-
-        // background-color: yellow;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .footer-select-container {
-
-            margin-top: 12px;
-
-            select {
-
-                background: none;
-
-                border: none;
-
-                width: 70px;
-
-                color: #8a8a8a;
-
-                font-size: 12px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-
-                margin-right: 10px;
-
-                &:focus {
-
-                    outline: none;
-
-                }
-
-                &::after {
-
-                    content: "";
-
-                    color: #8a8a8a;
-
-                }
-
-            }
-
-        }
-
-    }
-
-}
-
-
-
-
-
-// ! Адаптация
-
-@media (max-width: 886px) { 
-    
-    .main-wrapper {
-
-        .iphone-container {
-
-            display: none !important;
-
-        }
-
-    }
-
-}
-
-@media (max-width: 540px) {
-
-    footer {
-
-        margin-top: 20% !important;
-        margin-bottom: 20% !important;
-
-    }
-
-}

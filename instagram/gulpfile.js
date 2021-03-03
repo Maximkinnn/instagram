@@ -33,7 +33,8 @@ const               gulp = require('gulp'),                                     
     './src/scss/media.scss',
     './src/scss/vars.scss',
     './src/scss/header.scss',
-    './src/scss/preloader.scss'
+    './src/scss/preloader.scss',
+    './src/scss/footer.scss'
 
 ],
                 jsFiles = [                                                      // Создаем константу с массивом в котором поетапно подключаем файлы js (нужно для конкатинации) ;

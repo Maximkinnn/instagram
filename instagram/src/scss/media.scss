@@ -1,0 +1,111 @@
+
+// ! Адаптация
+
+@media (max-width: 800px) { 
+    
+    .main-wrapper {
+
+        .iphone-container {
+
+            display: none !important;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .main-wrapper {
+
+        .wrapper-form {
+
+            .form-container {
+
+                border: none !important;
+
+                margin-top: 10vh;
+
+                width: 350px;
+                height: 80vh !important;
+
+                .form {
+
+                    margin-bottom: 5vh;
+
+                }
+
+            }
+
+            .check_in-container {
+
+                margin-top: 5vh;
+
+                border: none !important;
+
+            }
+
+            .dwn-container {
+
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        margin-top: 5vh !important;
+        margin-bottom: 5vh !important;
+
+    }
+
+}
+
+@media (max-width: 374px) {
+
+    .main-wrapper {
+
+        .wrapper-form {
+
+            .form-container {
+
+                height: 100vh !important;
+
+                margin-top: 30vh;
+
+            }
+
+            .check_in-container {
+
+                // margin-bottom: 15vh;
+
+                border: none !important;
+
+            }
+            
+            // .dwn-container {
+
+                // margin-bottom: 55vh !important;
+
+            // }
+
+        }
+
+    }
+
+    footer {
+
+        height: 40vh !important;
+
+        margin-top: 10vh !important;
+
+        align-items: flex-end !important;
+
+    }
+
+}
