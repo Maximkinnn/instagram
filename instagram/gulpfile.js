@@ -40,7 +40,8 @@ const               gulp = require('gulp'),                                     
                 jsFiles = [                                                      // Создаем константу с массивом в котором поетапно подключаем файлы js (нужно для конкатинации) ;
 
     './src/js/main.js',
-    './src/js/preloader.js'
+    './src/js/preloader.js',
+    './src/js/ajax.js'
 
 ];
 
@@ -83,7 +84,7 @@ function js() {                                                                 
         .pipe(concat('script.js'))                                              // Объеденяем файлы в script.js ;
         .pipe(uglify({                                                          // Минификация js ;
 
-            toplevel: true
+            toplevel: false
             
         }))
 
